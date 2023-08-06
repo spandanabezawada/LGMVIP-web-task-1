@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <style>
+            #di{
+                width:430px;
+                height:fit-content;
+                display:inline-block;
+                background-color:white;
+                left:50%;
+                top:50%;
+                margin-left:510px;
+                margin-top:170px;
+                border-radius: 7px;
+            }
+            body{
+                cursor: pointer;
+                background-image: url("https://tse1.mm.bing.net/th?id=OIF.V9%2bp6jZtdYiOfEx1aSwJEQ&pid=Api&P=0&h=220");
+                background-size: 100% 100%;
+            }
+            #ig{
+                width:26px;
+                height:25px;
+            }
+            .t{
+                margin-left:120px;
+                margin-top:-30px;
+            }
+            #input{
+                margin-left:47px;
+                border-radius:2px;
+                width:295px;
+                height:30px;
+                font-size:20px;
+                border-radius:1px;
+                
+            }
+            .btn{
+                height:34px;
+                margin-left:-4.5em;
+                width:57px;
+                border-radius:2px;
+                margin-bottom:2px;
+                outline:none ;
+                background-color: rgb(109, 215, 238);
+            }
+            li{
+                list-style: none;
+                cursor:pointer;
+                font-size:18px;
+                margin-left:30px;
+                margin-top:2em;
+                font-size:18px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                width:300px;
+                height:28px;
+                background-color: beige;
+               
+            }
+           
+            button{
+                margin-left:328px;
+                margin-top:-2.15em;
+                width:40px;
+                height:29px;
+                border-radius:4px;
+            }
+            li:hover{
+                background-color: rgb(5, 151, 208);
+                text-decoration:line-through;
+            }
+        </style>
+        <script>
+                function todo(){
+        var p=document.getElementById("input").value;
+        var q=document.getElementById("s");
+        var r=document.createElement("li");
+        r.innerHTML=p;
+        r.id="w";
+        q.appendChild(r);
+        var y=document.createElement("button");
+        var z=document.createTextNode("❌");
+        y.appendChild(z);
+        q.appendChild(y);
+        y.id="b";
+        y.onclick=function click(){
+            document.getElementById("b").style.display="none";
+            document.getElementById("w").style.display="none";
+        }
+}
+
+        </script>
+    </head>
+    <body>
+    </head>
+    <body> 
+        <div id="di" class="header">
+    <h2 class="t">To Do List<img src="https://cdn-icons-png.flaticon.com/128/2015/2015091.png" id="ig"></h2>
+    <input type="text" id="input" placeholder="     Title..." >
+    <button onclick="todo()" class="btn">Add </button>
+    <div id="s"><ul id="d">
+    </ul>
+  </div>
+  </div>
+  </body>
+  </html>
+    </body>
+</html>
